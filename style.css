@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --primary-color:#001145;
+  --text-color: #9A9A9A;
+  --black-color: #000000;
+  --white-color: #fff;
+}
+
+/*
+===============================
+Global CSS START
+===============================
+*/
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Open Sans", sans-serif;
+}
+html,
+body {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+img, svg {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+  transition: 0.3s all ease;
+}
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  color: var(--text-white);
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+h1,
+h2 {
+  font-weight: 700;
+  line-height: 3.875rem;
+}
+h4,
+h5 {
+  font-weight: 600;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p:last-of-type {
+	margin: 0;
+}
+
+/*
+==========================
+Main Btn Css Start
+==========================
+*/
+.site-btn {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 45px;
+  display: inline-block;
+  transition: 0.3s all ease;
+  border-radius: 12px;
+  letter-spacing: 0.3px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+}
+.site-btn:hover {
+  color: var(--white-color);
+  background-color: #FF9500;
+}
+/*
+=========================
+Main Btn Css End 
+=========================
+*/
+#page {
+  overflow: hidden;
+}
+@media screen and (min-width: 1360px) {
+  .container {
+     max-width: 1350px;
+  }
+  .container-large {
+     max-width: 1400px;
+  }
+  }
+/*
+============================
+Global CSS END
+============================
+*/
+
+/*
+============================
+Header Css Start
+============================
+*/
+
+.site-header {
+  background-color: var(--primary-color);
+  padding-bottom: 20px;
+}
+/* .header_topbar {
+	padding-left: 14.9375rem;
+	padding-right: 14.9375rem;
+} */
+.h-topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #445C78;
+  padding: 12px 76px;
+}
+.h-topbar-info ul {
+  display: flex;
+  column-gap: 20px;
+}
+.h-topbar-info li a, .h-topbar-info li p {
+  color: #E5E5E5;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+.h-topbar-info li img {
+  margin-right: 12px;
+  color: var(--primary-color);
+}
+/* Mian Header */
+.header-main {
+	padding: 23px 0;
+}
+.header-inline-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header-right-wrapper {
+	display: flex;
+  align-items: center;
+	justify-content: flex-end;
+	column-gap: 60px;
+}
+.header-btn-wrap {
+	display: flex;
+	align-items: center;
+	column-gap: 16px;
+  }
+  .header-btn-wrap .h-btn {
+	color: var(--white-color);
+	font-size: 14px;
+	font-weight: 600;
+	display: inline-block;
+	font-family: "Montserrat", sans-serif;
+	letter-spacing: 0.3px;
+	padding: 6px 36px;
+	border-radius: 4px;
+	border: 0.5px solid transparent;
+	background-color: transparent;
+	transition: 0.3s all ease;
+  }
+  .header-btn-wrap .h-btn.b-btn {
+	border-color: var(--white-color);
+  }
+  .header-btn-wrap .h-btn.b-btn:hover {
+	color: var(--white-color);
+	background-color: #FF9500;
+	border-color: #FF9500;
+  }
+  .header-btn-wrap .h-btn.bg-btn {
+	background-color: #FF9500;
+	border: 0;
+	padding: 6px 23px;
+  }
+  .language-select select {
+	width: 100%;
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 0.3px;
+	background: transparent;
+	border: 0;
+	outline: none;
+	color: var(--white-color);
+}
+.language-select select option {
+	width: 200px;
+	background-color: var(--primary-color);
+	border: 0;
+	outline: none;
+	display: inline-block;
+}
+@media only screen and (max-width:1199px) {
+	.site-logo {
+		max-width: 170px;
+	}
+	.h-topbar-inner {
+		padding: 12px 50px;
+	}
+}
+@media only screen and (max-width:991px) {
+	.h-topbar-inner {
+		flex-direction: column;
+		row-gap: 10px;
+	}
+}
+@media only screen and (max-width:767px) {
+	.h-topbar-inner {
+		display: block;
+	}
+	.h-topbar-info ul {
+		display: block;
+	}
+	.header-btn-wrap {
+		display: none;
+	}
+}
+/* Nav Menu */
+.site-header .main-menu {
+	text-align: right;
+}
+.site-header .menu {
+	display: flex;
+	column-gap: 30px;
+} 
+.site-header .menu > .menu-item{
+	display: inline-block;
+	position: relative;
+}
+.site-header .menu > .menu-item > a {
+	color: #E5E5E5;
+	font-weight: 300;
+	font-size: 14px;
+	display: block;
+	text-decoration: none;
+	font-family: "Montserrat", sans-serif;
+	transition: 0.3s all ease;
+}
+.site-header .menu > .menu-item > .sub-menu > .menu-item > a:hover,
+.site-header .menu > .menu-item:hover > a{
+	color: #FF9500;
+}
+.site-header .open-nav-menu {
+	height: 34px;
+	width: 100%;
+	margin-right: 15px;
+	display: none;
+	align-items: center;
+	justify-content: flex-end;
+	cursor: pointer;
+}
+.site-header .open-nav-menu span{
+	display: block;
+	height: 3px;
+	width: 24px;
+	background-color: var(--white-color);
+    position: relative;
+}
+.site-header .open-nav-menu span:before,
+.site-header .open-nav-menu span:after{
+	content: '';
+	position: absolute;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--white-color);
+	box-sizing: border-box;
+}
+.site-header .open-nav-menu span:before{
+	top:-7px;
+}
+.site-header .open-nav-menu span:after{
+	top:7px;
+}
+.site-header .close-nav-menu{
+	height: 40px;
+	width: 40px;
+	background-color: #ffffff;
+	margin:0 0 15px 15px;
+	cursor: pointer;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+.site-header .close-nav-menu img{
+	width: 16px;
+}
+.site-header .menu-overlay{
+	position: fixed;
+	z-index: 999;
+	background-color: rgba(0,0,0,0.5);
+	left:0;
+	top:0;
+	height: 100%;
+	width: 100%;
+	visibility: hidden;
+	opacity:0;
+	transition: all 0.3s ease;
+}
+
+/* Navber Responsive Start */
+@media only screen and (max-width:1400px) {
+  .header-right-wrapper {
+    column-gap: 30px;
+  }
+}
+@media only screen and (max-width:1199px) {
+  .site-header .menu {
+    column-gap: 25px;
+  }
+}
+@media only screen and (max-width: 991px){
+  .site-header .open-nav-menu {
+    width: auto;
+  }
+	.site-header .menu-overlay.active{
+   	visibility: visible;
+	  opacity: 1;
+  }
+	.site-header .main-menu{
+		position: fixed;
+		right: -280px;
+		visibility: hidden;
+		width: 280px;
+		height: 100%;
+		top:0;
+		overflow-y: auto;
+		background-color: #222222;
+		z-index: 1000;
+		padding: 15px 0;
+		transition: all 0.5s ease;
+	}
+	.site-header .main-menu.open{
+		visibility: visible;
+		right: 0px;
+	}
+  .site-header .menu {
+    flex-direction: column;
+	text-align: left;
+  }
+	.site-header .menu > .menu-item{
+		display: block;
+		margin:0;
+	}
+	.site-header .menu > .menu-item > a{
+		color: #ffffff;
+		padding: 12px 15px;
+		border-bottom: 1px solid #333333;
+	}
+	.site-header .menu > .menu-item:first-child > a{
+	    border-top: 1px solid #333333;	
+	}
+	.site-header .close-nav-menu,
+	.site-header .open-nav-menu{
+		display: flex;
+	}
+}
+/* Navber Responsive End */
+/*
+============================
+Header Css End
+============================
+*/
+
+
+.hero-section {
+	padding-top: 180px;
+	padding-bottom: 243px;
+	background-size: cover;
+	background-position: center;
+  }
+  .hero-btn {
+	margin-top: 106px;
+  }
+
+
+
+
+/*
+============================
+Footer Css Start
+============================
+*/
+
+
+
+/*
+============================
+Footer Css End
+============================
+*/
+
+
+
+
