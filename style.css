@@ -97,7 +97,7 @@ Main Btn Css Start
 ==========================
 */
 .site-btn {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   padding: 10px 45px;
   display: inline-block;
@@ -128,6 +128,14 @@ Main Btn Css End
      max-width: 1400px;
   }
   }
+  .p-relative {
+	position: relative;
+  }
+  .sec-brand-logo {
+	position: absolute;
+	right: 36px;
+	bottom: 36px;
+}
 /*
 ============================
 Global CSS END
@@ -216,23 +224,31 @@ Header Css Start
 	border: 0;
 	padding: 6px 23px;
   }
-  .language-select select {
-	width: 100%;
-	font-family: "Montserrat", sans-serif;
-	text-transform: uppercase;
-	font-size: 16px;
-	letter-spacing: 0.3px;
-	background: transparent;
-	border: 0;
-	outline: none;
+  .custom-select {
+	position: relative;
+  }
+  .custom-select select {
+	  appearance: none;
+	  -webkit-appearance: none;
+	  width: 100%;
+	  font-size: 16px;
+	  font-weight: 600;
+	  background-color: var(--primary-color);
+	  font-family: "Montserrat", sans-serif;
+	  border: 0;
+	  color: var(--white-color);
+	  cursor: pointer;
+	  text-transform: uppercase;
+	  padding-right: 20px;
+  }
+  .custom-select::before {
+	content: "\f107";
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-family: 'Font Awesome 6 pro';
+	font-size: 14px;
 	color: var(--white-color);
-}
-.language-select select option {
-	width: 200px;
-	background-color: var(--primary-color);
-	border: 0;
-	outline: none;
-	display: inline-block;
 }
 @media only screen and (max-width:1199px) {
 	.site-logo {
@@ -405,8 +421,11 @@ Header Css Start
 Header Css End
 ============================
 */
-
-
+/*
+============================
+Hero Css Start
+============================
+*/
 .hero-section {
 	padding-top: 180px;
 	padding-bottom: 243px;
@@ -416,9 +435,29 @@ Header Css End
   .hero-btn {
 	margin-top: 106px;
   }
-
-
-
+  @media only screen and (max-width:991px) {
+	.hero-section {
+		padding-top: 150px;
+		padding-bottom: 180px;
+	}
+  }
+  @media only screen and (max-width:767px) {
+	.hero-section {
+		padding-top: 100px;
+		padding-bottom: 150px;
+	}
+	.hero-btn {
+		margin-top: 50px;
+	}
+	.site-btn {
+		font-size: 15px;
+	}
+  }
+/*
+============================
+Hero Css End
+============================
+*/
 
 /*
 ============================

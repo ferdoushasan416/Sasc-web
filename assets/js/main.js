@@ -100,14 +100,6 @@ $(window).on('scroll', function () {
 	   }
 	});
 
-  // Language Select //
-  function languageChanged() {
-    const selectedLanguage = document.getElementById("language").value;
-    alert("Language selected: " + selectedLanguage);
-    // Add logic to update language or redirect as needed
-}
-
-
   })();
 // Navbar End //
         $(document).ready(function(){
@@ -121,11 +113,7 @@ $(window).on('scroll', function () {
          
       });
 
-     
-
-
-
-
+    
 /* magnificPopup img view */
 $('.popup-image').magnificPopup({
 	type: 'image',
