@@ -730,46 +730,23 @@ About Us Css Start
 	font-weight: 500;
 	margin-top: 20px;
   }
-.sec_subtitle {
+  .sec_subtitle {
 	color: #C7C7C7;
 	font-size: 24px;
 	font-weight: 700;
 	position: relative;
-	max-width: 205px;
-	margin-left: auto;
-	margin-right: auto;
-  }
-  .sec_subtitle:before {
-	content: "";
-	position: absolute;
-	width: 11px;
-	height: 14px;
-	top: 50%;
-	left: 14px;
-	transform: translateY(-50%);
-	border-top: 8px solid transparent;
-	border-bottom: 8px solid transparent;
-	border-left: 10px solid var(--primary-color);
-  }
-  .sec_subtitle:after {
-	content: "";
-	position: absolute;
-	width: 11px;
-	height: 14px;
-	top: 50%;
-	right: 14px;
-	transform: translateY(-50%);
-	border-top: 8px solid transparent;
-	border-bottom: 8px solid transparent;
-	border-right: 10px solid var(--primary-color);
-  }
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 10px;
+	margin-bottom: 20px;
+}
   @media only screen and (max-width:991px) {
 	.about-us-section {
 		padding: 150px 0;
 	}
 	.sec_subtitle {
 		font-size: 22px;
-		max-width: 190px;
 	}
 	.about_title p {
 		font-size: 22px;
@@ -783,8 +760,6 @@ About Us Css Start
 	}
 	.sec_subtitle {
 		font-size: 18px;
-		max-width: 180px;
-		margin-bottom: 20px;
 	}
 	.about_title p {
 		font-size: 18px;
@@ -794,15 +769,8 @@ About Us Css Start
 	.about_title p br {
 		display: none;
 	}
-	.sec_subtitle::before {
-		width: 10px;
-		height: 12px;
-		left: 24px;
-	}
-	.sec_subtitle::after {
-		width: 10px;
-		height: 12px;
-		right: 24px;
+	.sec_subtitle span img {
+		width: 20px;
 	}
   }
 /*
@@ -810,8 +778,43 @@ About Us Css Start
 About Us Css End
 ===============================
 */
-
-
+.why-choose-section {
+	background: #0033CE0D;
+}
+.why-choose-content-wrap {
+	margin-top: 105px;
+	max-width: 630px;
+}
+.choose-content-list {
+	margin-top: 30px;
+}
+.choose-content-list li {
+	color: var(--primary-color);
+	font-size: 20px;
+	font-weight: 600;
+	position: relative;
+	padding-left: 40px;
+	font-family: "Montserrat", sans-serif;
+  }
+  .choose-content-list li::before {
+	  content: "\f00c";
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  font-family: 'Font Awesome 6 pro';
+	  font-size: 12px;
+	  width: 24px;
+	  height: 24px;
+	  color: var(--white-color);
+	  background-color: var(--primary-color);
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  border-radius: 50%;
+  }
+  .choose-content-list li:not(:last-of-type) {
+	  margin-bottom: 20px;
+  }
 
 /*
 ============================
