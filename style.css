@@ -778,13 +778,32 @@ About Us Css Start
 About Us Css End
 ===============================
 */
+
+/*
+===============================
+Why Choose Css Start
+===============================
+*/
 .why-choose-section {
 	background: #0033CE0D;
 }
 .why-choose-content-wrap {
 	margin-top: 105px;
 	max-width: 630px;
+	margin-left: auto;
+	margin-right: auto;
 }
+.why-choose-content-wrap h3 {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 48px;
+  }
+  .why-choose-content-wrap p {
+	color: #9A9A9A;
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 400;
+  }
 .choose-content-list {
 	margin-top: 30px;
 }
@@ -797,24 +816,217 @@ About Us Css End
 	font-family: "Montserrat", sans-serif;
   }
   .choose-content-list li::before {
-	  content: "\f00c";
-	  position: absolute;
-	  left: 0;
-	  top: 0;
-	  font-family: 'Font Awesome 6 pro';
-	  font-size: 12px;
-	  width: 24px;
-	  height: 24px;
-	  color: var(--white-color);
-	  background-color: var(--primary-color);
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  border-radius: 50%;
+	content: "\f00c";
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-family: 'Font Awesome 6 pro';
+	font-size: 12px;
+	width: 24px;
+	height: 24px;
+	color: var(--white-color);
+	background-color: var(--primary-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
   }
   .choose-content-list li:not(:last-of-type) {
-	  margin-bottom: 20px;
+	margin-bottom: 25px;
+}
+@media only screen and (max-width:991px) {
+	.why-choose-content-wrap {
+		margin-top: 60px;
+	}
+	.why-choose-content-wrap h3 {
+		font-size: 30px;
+		line-height: 38px;
+	}
+	.why-choose-content-wrap p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.choose-content-list li {
+		font-size: 18px;
+	}
+}
+@media only screen and (max-width:767px) {
+	.why-choose-content-wrap {
+		margin-top: 40px;
+		max-width: 100%;
+	}
+	.why-choose-content-wrap h3 {
+		font-size: 25px;
+		line-height: 32px;
+	}
+	.why-choose-content-wrap p {
+		font-size: 15px;
+		line-height: 24px;
+	}
+	.choose-content-list li {
+		font-size: 16px;
+	}
+	.choose-content-list li::before {
+		top: 8px;
+		font-size: 10px;
+		width: 22px;
+		height: 22px;
+	}
+	.choose-content-list li:not(:last-of-type) {
+		margin-bottom: 20px;
+	}
+}
+/*
+===============================
+Why Choose Css End
+===============================
+*/
+
+/*
+===============================
+Your Interest Css Start
+===============================
+*/
+.your-interest-section {
+  background-size: cover;
+  background-position: center;
+  padding-top: 60px;
+  padding-bottom: 55px;
+  position: relative;
+  z-index: 2;
+}
+.your-interest-section:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000E5;
+  z-index: -1;
+}
+.interest_title h2 {
+	color: var(--white-color);
+	margin-bottom: 16px;
   }
+.interest_title p {
+	color: #E5E5E5CC;
+  }
+
+.your-interest-form {
+	margin-top: 56px;
+	max-width: 1057px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.field label {
+	color: var(--white-color);
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 8px;
+	display: block;
+	text-align: left;
+  }
+.field input, .field textarea {
+	width: 100%;
+	height: 60px;
+	outline: none;
+	border: 2px solid #00114599;
+	background-color: #EEEEEE;
+	border-radius: 4px;
+	display: block;
+	font-size: 20px;
+	font-weight: 400;
+	color: #0000004D;
+	padding-left: 22px;
+	margin-bottom: 20px;
+  }
+.field textarea {
+	height: 197px;
+	padding-top: 16px;
+}
+.field-submit {
+	margin-top: 50px;
+}
+.field button {
+  color: var(--white-color);
+  outline: none;
+  border: 0;
+  background: #001145;
+  height: 60px;
+  width: 355px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s all ease;
+}
+.field button:hover {
+	color: var(--primary-color);
+	background-color: var(--white-color);
+}
+.field.field-submit span {
+  color: #E5E5E599;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 6px;
+  display: block;
+}
+@media only screen and (max-width:991px) {
+.field label {
+	font-size: 18px;
+	}
+	.field input{
+		height: 55px;
+		font-size: 18px;
+	}
+	.field textarea {
+		font-size: 18px;
+		height: 170px;
+		padding-top: 16px;
+	}
+	.field-submit {
+		margin-top: 40px;
+	}
+}
+@media only screen and (max-width:767px) {
+.field label, 
+.field input, 
+.field textarea{
+	font-size: 16px;
+	}
+	.field input{
+		height: 55px;
+	}
+	.field textarea {
+		height: 170px;
+		padding-top: 16px;
+	}
+	.field-submit {
+		margin-top: 30px;
+	}
+	.field button {
+		height: 55px;
+		width: 300px;
+		font-size: 18px;
+	}
+	.field.field-submit span {
+		font-size: 16px;
+	}
+}
+/*
+===============================
+Your Interest Css End
+===============================
+*/
+
+
+
+
+
+
+
+
 
 /*
 ============================
