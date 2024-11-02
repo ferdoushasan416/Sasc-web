@@ -1361,6 +1361,95 @@ Our Solution Css End
 ===============================
 */
 
+.solution-circle-box-wrap {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.section-title h3 {
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 48px;
+	margin-bottom: 40px;
+	color: var(--black-color);
+	text-align: center;
+}
+  .key-feature-box {
+	width: 300px;
+	height: 300px;
+	border: 1px solid #00114599;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 50%;
+	margin-top: 70px;
+  }
+  .key-feature-box h5 {
+	color: var(--black-color);
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 700;
+	margin-bottom: 30px;
+  }
+  .key-feature-box p {
+	color: #00000099;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 400;
+  }
+  .route-img img {
+	width: 100%;
+	object-fit: cover;
+	margin-bottom: 36px;
+}
+.solution-contents p {
+	color: #00000099;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 38px;
+}
+@media only screen and (max-width:991px) {
+	.section-title h3 {
+		font-size: 35px;
+		line-height: 45px;
+		margin-bottom: 30px;
+	}
+	.solution-contents p {
+		font-size: 18px;
+		line-height: 35px;
+	}
+}
+@media only screen and (max-width:767px) {
+	.section-title h3 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.section-title h3 br {
+		display: none;
+	}
+	.solution-circle-box-wrap {
+		justify-content: center;
+	}
+	.key-feature-box {
+		margin-top: 40px;
+	}
+	.key-feature-box h5 {
+		font-size: 18px;
+		margin-bottom: 25px;
+	}
+	.key-feature-box p {
+		font-size: 16px;
+	}
+	.solution-contents p {
+		font-size: 16px;
+		line-height: 32px;
+	}
+	.route-img img {
+		margin-bottom: 30px;
+	}
+}
 /*
 ===================================================================
 Our Solution Page Style End
