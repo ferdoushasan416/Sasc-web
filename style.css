@@ -150,12 +150,7 @@ Header Css Start
 
 .site-header {
   background-color: var(--primary-color);
-  padding-bottom: 20px;
 }
-/* .header_topbar {
-	padding-left: 14.9375rem;
-	padding-right: 14.9375rem;
-} */
 .h-topbar-inner {
   display: flex;
   justify-content: space-between;
